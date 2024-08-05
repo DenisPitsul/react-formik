@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #3ea9f5;
+  color: white;
+  font-family: sans-serif;
+}
