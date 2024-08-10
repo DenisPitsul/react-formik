@@ -48,7 +48,10 @@ const SIGN_UP_VALIDATION_SCHEMA = yup.object({
     .string()
     .oneOf([yup.ref("password")], "Confirmation passwords must match password")
     .required(),
-  agreement: yup.boolean().required("You must accept the agreement"),
+  agreement: yup
+    .boolean()
+    .oneOf([true])
+    .required("You must accept the agreement"),
 });
 
 const SIGN_IN_VALIDATION_SCHEMA = yup.object({

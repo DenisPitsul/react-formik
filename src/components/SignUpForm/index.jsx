@@ -12,7 +12,7 @@ function SignUpForm() {
     email: "",
     password: "",
     passwordConformation: "",
-    radioButton: "buyer",
+    role: "buyer",
     agreement: false,
   };
 
@@ -137,7 +137,7 @@ function SignUpForm() {
                 <Field
                   className={styles.radioButton}
                   type="radio"
-                  name="radioButton"
+                  name="role"
                   value="buyer"
                 />
                 <div className={styles.radioButtonCaption}>
@@ -154,7 +154,7 @@ function SignUpForm() {
                 <Field
                   className={styles.radioButton}
                   type="radio"
-                  name="radioButton"
+                  name="role"
                   value="creative"
                 />
                 <div className={styles.radioButtonCaption}>
